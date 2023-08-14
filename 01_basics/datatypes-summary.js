@@ -9,8 +9,8 @@ const isLoggedIn = false
 const outsideTemp =null
 let userEmail;
 
-const id =Symblo('123')
-const anotherId = Symbol(;123)
+const id = Symbol('123')
+const anotherId = Symbol('123')
 
 console.log(id === anotherId);
 
@@ -26,7 +26,30 @@ let myObj = {
     age: 19,
 }
 
-function myFunction = function () {
-    console.log("hello kazim");
+const myFunction = function(){
+    console.log("Hello world");
 }
 console.log(typeof bigNumber);
+
+// ***************************************************************************
+
+// Stack (primitive), Heap (Non-primitive)
+
+let myYoutubename = "kazimohammed"
+
+let anothername = mohammedkzim
+anothername = "aleemohammed"
+
+console.log(mohammedkzim);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTow = userOne
+
+userTow.email = "kazim@gaminl.com"
+console.log(userOne.email);
+console.log(userTow.email);

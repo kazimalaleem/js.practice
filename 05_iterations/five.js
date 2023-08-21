@@ -1,50 +1,39 @@
-// for
+const coding = ["js", "ruby", "ph", "java", "cpp"]
 
-// for (let i = 0; i <= 10; i++) {
-//     const element = i;
-//     if (element == 5) {
-//         console.log("5 is best number");
-//     }
-//     console.log(element);
+// coding.forEach( function (item) {
+//     console.log(item);
+// } )
 
+// coding.forEach( (item) => {
+//     console.log(item);
+// } )
+
+// function printMe(item){
+//     console.log(item);
 // }
 
-// console.log(element);
+// coding.forEach(printMe)
 
-for (let i = 1; i <= 10; i++) {
-    //   console.log(`Outer loop value: ${i}`);
-        for (let j = 1; j <= 10; j++) {
-    //   console.log(`Inner loop value ${j} and inner loop${i}`);
-    //   console.log(i + '*' + j + ' = ' + i*j);
-       
-      }
-        
-    }
-    let myArray =["flash", "batman", "superman"]
-    // console.log(myArray.length)
-    for (let index = 0; index < myArray.length; index++) {
-        const element = myArray[index];
-        // console.log(element);
-    }
+// coding.forEach( (item, index, arr)=> {
+//     console.log(item, index, arr);
+// } )
 
-// break and continue
+const myCoding = [
+    {
+        languageName: "javascripet",
+        languageFileName: "js"
+    },
+    {
+        languageName: "java",
+        languageFileName: "java"
+    },
+    {
+        languageName: "phyphon",
+        languageFileName: "ph"
+    },
+]
 
-for (let index = 1; index <= 20; index++) {
-    if (index == 5) {
-        // console.log(`Detected 5`);
-        break
-    }
-//  console.log(`Value of i is ${index}`);
-  
-}
+myCoding.forEach( (item) => {
 
-
-for (let index = 1; index <= 20; index++) {
-    if (index == 5) {
-        console.log(`Detected 5`);
-        continue
-    }
- console.log(`Value of i is ${index}`);
-  
-}
-
+    console.log(item.languageName);
+})
